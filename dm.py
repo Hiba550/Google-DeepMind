@@ -11,7 +11,7 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix='/', intents=intents)
 
-genai.configure(api_key="AIzaSyC1yUEgZuCDQRX2CFrv_v4bSUIJ9Jv1zjY")
+genai.configure(api_key="")
 
 # Set up the model
 generation_config = {
@@ -63,4 +63,4 @@ async def generate(ctx, *, prompt: commands.clean_content):
         await ctx.send("An error occurred while generating the response.")
 
 
-bot.run('MTIxMDk4MTE0MjczNjY3MDc5MA.G1IHky.FqEfJF_a5qDAdhd7FEyzBcqMmYkjYQoTzAniVM')
+bot.run('')
