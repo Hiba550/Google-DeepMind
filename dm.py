@@ -62,4 +62,4 @@ async def generate(ctx, *, prompt: commands.clean_content):
         await ctx.send("An error occurred while generating the response.")
 
 
-bot.run('')
+bot.run('enter you bot token')
