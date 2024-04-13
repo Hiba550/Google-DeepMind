@@ -8,7 +8,7 @@ intents.presences = False
 intents.messages = True  
 intents.message_content = True  
 
-bot = commands.Bot(command_prefix='/', intents=intents)
+bot = commands.Bot(command_prefix='-', intents=intents)
 
 genai.configure(api_key="enter your gemini api key")
 
@@ -50,7 +50,7 @@ async def on_ready():
 
 
 @bot.command()
-async def generate(ctx, *, prompt: commands.clean_content):
+async def generate(ctx, *, prompt: commands.clean_content): # to generate response use -generate command
     try:
         response = model.generate_content([prompt])
         if response.parts: 
