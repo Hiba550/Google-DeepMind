@@ -10,7 +10,7 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix='/', intents=intents)
 
-genai.configure(api_key="")
+genai.configure(api_key="enter your gemini api key")
 
 # Set up the model
 generation_config = {
